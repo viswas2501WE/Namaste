@@ -90,7 +90,7 @@ const Part10 = () => {
   ];
 
   return (
-    <div className="text-black px-[14%] py-8" style={{ fontFamily: 'Inter, sans-serif' }}>
+    <div className="text-gray-600 px-[14%] py-8" style={{ fontFamily: 'Inter, sans-serif' }}>
         <h1 className="text-4xl pb-[3%]">Featured Products</h1>
         <h1 className="text-sm pb-[3%]">Top Best Sellers</h1>
 

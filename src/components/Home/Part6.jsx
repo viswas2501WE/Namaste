@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const Part6 = () => {
     return(
-        <div className="flex justify-center items-center px-[14%] text-black">
+        <div className="flex justify-center items-center px-[14%] text-gray-600">
             <Image
                 src={`/Cream_Black_Minimalist.png`}
                 alt="Cream Black Minimalist"

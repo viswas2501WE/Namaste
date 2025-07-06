@@ -59,7 +59,7 @@ const Part4 = () => {
   };
 
   return (
-    <div className="text-black flex flex-col justify-center py-10 items-center w-full">
+    <div className="text-gray-600 flex flex-col justify-center py-10 items-center w-full">
       <h1 className="text-2xl">Our high vibe tribe</h1>
       <div className="flex items-center">
         {[...Array(5)].map((_, i) => (

@@ -1,110 +1,105 @@
-import Part3Common from "./Part3Common";
+import ShopAll from "@/components/Shop-All/Shop-All";
 
-const Part3 = () => {
+const Part10 = () => {
   // Explicitly defined product items with unique image URLs and titles
   const products = [
     {
       id: 1,
       imageUrl: '/70048E73-FC04-4A94-A59C-374E7A399E9B.jpg', // Replace with your actual image path
       title: 'Rings Silver 925',
+      price: '1000',
       linkHref: '/product/1',
     },
     {
       id: 2,
       imageUrl: '/70048E73-FC04-4A94-A59C-374E7A399E9B.jpg', // Placeholder
       title: 'Pendants',
+      price: '1000',
       linkHref: '/product/2',
     },
     {
       id: 3,
       imageUrl: '/70048E73-FC04-4A94-A59C-374E7A399E9B.jpg', // Placeholder
       title: 'Silver 925 Earrings',
+      price: '1000',
       linkHref: '/product/3',
     },
     {
       id: 4,
       imageUrl: '/70048E73-FC04-4A94-A59C-374E7A399E9B.jpg', // Placeholder
       title: 'Nose rings / Nose pins / Septums / Clip ons',
+      price: '1000',
       linkHref: '/product/4',
     },
     {
       id: 5,
       imageUrl: '/70048E73-FC04-4A94-A59C-374E7A399E9B.jpg', // Placeholder
-      title: 'Bracelets Gold Plated',
-      linkHref: '/product/5',
+      title: 'Nose rings / Nose pins / Septums / Clip ons',
+      price: '1000',
+      linkHref: '/product/4',
     },
     {
       id: 6,
       imageUrl: '/70048E73-FC04-4A94-A59C-374E7A399E9B.jpg', // Placeholder
-      title: 'Necklaces Pearl',
-      linkHref: '/product/6',
+      title: 'Nose rings / Nose pins / Septums / Clip ons',
+      price: '1000',
+      linkHref: '/product/4',
     },
     {
       id: 7,
       imageUrl: '/70048E73-FC04-4A94-A59C-374E7A399E9B.jpg', // Placeholder
-      title: 'Charms Collection',
-      linkHref: '/product/7',
+      title: 'Bracelets Gold Plated',
+      price: '1000',
+      linkHref: '/product/5',
     },
     {
       id: 8,
-      imageUrl: '/70048E73-FC04-4A94-A59C-374E7A399E9B.jpg', // Placeholder
-      title: 'Brooches Vintage',
-      linkHref: '/product/8',
+      imageUrl: '/70048E73-FC04-4A94-A59C-374E7A399E9B.jpg', // Replace with your actual image path
+      title: 'Rings Silver 925',
+      price: '1000',
+      linkHref: '/product/1',
     },
     {
       id: 9,
       imageUrl: '/70048E73-FC04-4A94-A59C-374E7A399E9B.jpg', // Placeholder
-      title: 'Anklets Silver',
-      linkHref: '/product/9',
+      title: 'Pendants',
+      price: '1000',
+      linkHref: '/product/2',
     },
     {
       id: 10,
       imageUrl: '/70048E73-FC04-4A94-A59C-374E7A399E9B.jpg', // Placeholder
-      title: 'Bangles Gemstone',
-      linkHref: '/product/10',
+      title: 'Silver 925 Earrings',
+      price: '1000',
+      linkHref: '/product/3',
     },
     {
       id: 11,
       imageUrl: '/70048E73-FC04-4A94-A59C-374E7A399E9B.jpg', // Placeholder
-      title: 'Cufflinks Modern',
-      linkHref: '/product/11',
+      title: 'Nose rings / Nose pins / Septums / Clip ons',
+      price: '1000',
+      linkHref: '/product/4',
     },
     {
       id: 12,
       imageUrl: '/70048E73-FC04-4A94-A59C-374E7A399E9B.jpg', // Placeholder
-      title: 'Hair Accessories',
-      linkHref: '/product/12',
-    },
-    {
-      id: 13,
-      imageUrl: '/70048E73-FC04-4A94-A59C-374E7A399E9B.jpg', // Placeholder
-      title: 'Body Chains',
-      linkHref: '/product/13',
-    },
-    {
-      id: 14,
-      imageUrl: '/70048E73-FC04-4A94-A59C-374E7A399E9B.jpg', // Placeholder
-      title: 'Toe Rings',
-      linkHref: '/product/14',
-    },
-    {
-      id: 15,
-      imageUrl: '/70048E73-FC04-4A94-A59C-374E7A399E9B.jpg', // Placeholder
-      title: 'Kids Jewelry',
-      linkHref: '/product/15',
+      title: 'Bracelets Gold Plated',
+      price: '1000',
+      linkHref: '/product/5',
     },
   ];
 
   return (
-    <div className="text-gray-600 px-[14%] py-8" style={{ fontFamily: 'Inter, sans-serif' }}>
-      <h1 className="text-4xl mb-8">Shop By Category</h1>
+    <div className="text-gray-600 px-[14%] py-8 bg-white" style={{ fontFamily: 'Inter, sans-serif' }}>
+        <h1 className="text-4xl pb-[3%]">Shop All Products</h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 justify-items-center">
         {products.map((product) => (
-          <Part3Common
+          <ShopAll
             key={product.id}
             imageUrl={product.imageUrl}
             title={product.title}
+            price={product.price}
             linkHref={product.linkHref}
           />
         ))}
@@ -119,4 +114,4 @@ const Part3 = () => {
   );
 };
 
-export default Part3;
+export default Part10;

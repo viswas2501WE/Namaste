@@ -61,7 +61,7 @@ const Part13 = () => {
   ];
 
   return (
-    <div className="text-black px-[14%] pb-8 pt-4" style={{ fontFamily: 'Inter, sans-serif' }}>
+    <div className="text-gray-600 px-[14%] pb-8 pt-4" style={{ fontFamily: 'Inter, sans-serif' }}>
         <h1 className="flex justify-self-center text-2xl py-[2%]">Follow us on Instagram</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-1 justify-items-center">
         {products.map((product) => (

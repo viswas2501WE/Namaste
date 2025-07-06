@@ -48,7 +48,7 @@ const Part7 = () => {
   ];
 
   return (
-    <div className="text-black px-[14%] py-8" style={{ fontFamily: 'Inter, sans-serif' }}>
+    <div className="text-gray-600 px-[14%] py-8" style={{ fontFamily: 'Inter, sans-serif' }}>
               <h1 className="text-4xl mb-8">All Collections</h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center">

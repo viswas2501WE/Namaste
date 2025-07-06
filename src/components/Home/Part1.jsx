@@ -41,6 +41,8 @@ const ImageSlider = () => {
   const settings = {
     dots: false,
     infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
     speed: 500,
     arrows: true,
     slidesToShow: 1,
